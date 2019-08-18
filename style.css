@@ -1,0 +1,149 @@
+.html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    color: #000;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.navbar {
+    background: #383E4C;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a, a {
+    color: #fff;
+    border: 1px solid #646d7c;
+    padding: 10px 25px;
+    text-decoration-line: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.content a {
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.header {
+    background-image: url(img/bg-1.jpg);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+    margin: 20px 0 10px 0;
+}
+
+h2 {
+    color: #666666;
+}
+
+p {
+    color: #333;
+}
+
+.header h4 {
+    font-size: 25px;
+    text-shadow: 2px 2px #999;
+    font-weight: 400;
+}
+
+.services-header,
+.contact,
+.header {
+    color: #fff;
+    padding: 200px 0;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.services-header {
+    background-image: url(img/bg-2.jpg);
+    font-size: 36px;
+    text-shadow: 2px 2px #aaa;
+    padding: 150px;
+}
+
+.services-header > * {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.services-header p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact {
+    background-image: url(img/bg-3.jpg);
+}
+
+
+.aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 30%;
+    background: #eee;
+    margin: 15px;
+    max-width: 500px;
+}
+
+.card-content {
+    display: grid;
+    justify-items: center;
+    padding: 0 15px;
+}
+
+.card-content a {
+    margin: 20px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+/* COLORS */
+
+.red {
+    color: #852406;
+}
+
+.green {
+    color: #178A27;
+}
+
+.info {
+    color: #337ab7;
+}
+
+.btn-red {
+    background: #852406;
+}
+
+.btn-green {
+    background: #178A27;
+}
+
+.btn-info {
+    background: #337ab7;
+}
+
+.invert {
+    background: #fff;
+    color: #666;
+}

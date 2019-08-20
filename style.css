@@ -5,7 +5,7 @@
 body {
     margin: 0 auto;
     color: #000;
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
@@ -26,9 +26,11 @@ body {
     margin: 0 10px;
 }
 
-.content a {
-    border-radius: 5px;
-    font-size: 18px;
+.btn-toggle-nav {
+    width: 35px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    display: none;
 }
 
 .header {
@@ -37,31 +39,34 @@ body {
 }
 
 .header h1 {
-    font-size: 70px;
+    font-size: 80px;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
-    margin: 20px 0 10px 0;
+    margin: 0 auto;
 }
 
 h2 {
     color: #666666;
+    margin: 0;
 }
 
 p {
+    font-size: 15px;
     color: #333;
 }
 
 .header h4 {
     font-size: 25px;
-    text-shadow: 2px 2px #999;
+    text-shadow: 2px 2px #666;
     font-weight: 400;
+    margin: 0;
 }
 
 .services-header,
 .contact,
 .header {
     color: #fff;
-    padding: 200px 0;
+    padding: 180px 0;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -84,40 +89,164 @@ p {
     color: #fff;
 }
 
-.contact {
-    background-image: url(img/bg-3.jpg);
-}
-
 
 .aboutus {
     display: flex;
     flex-wrap: wrap;
-    margin: 2% 10%;
+    width: 1200px;
+    margin: 3% auto;
     justify-content: center;
+}
+
+.content a {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
 }
 
 .card {
     flex: 1 1 30%;
-    background: #eee;
-    margin: 15px;
-    max-width: 500px;
+    background: #f2f2f2;
+    margin:25px 15px;
+    max-width: 550px;
 }
 
 .card-content {
-    display: grid;
-    justify-items: center;
-    padding: 0 15px;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-content a {
-    margin: 20px;
-}
-
-.card-img {
+.content-img {
     width: 100%;
 }
 
-/* COLORS */
+.cols-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 65%;
+    margin: 3% auto;
+}
+
+.cols {
+    background: #f2f2f2;
+    grid-column: span 1;
+}
+
+.col-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.col-content a{
+    margin: 15px;
+}
+
+.bigger {
+    grid-column: 1 / -1;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    background-image: url(img/bg-3.jpg);
+    padding: 80px 0;
+}
+
+.contact h1 {
+    font-size: 36px;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.form-title {
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.form-group p {
+    text-align: center;
+    padding: 15px;
+    grid-column: 1 / -1;
+    font-weight: 700;
+}
+
+.form-group textarea {
+    grid-row: 3 / span 3;
+    grid-column: 2;
+}
+
+.form-group a {
+    grid-column: 1 / -1;
+    background: #333;
+    justify-self: center;
+}
+
+.form-group > input, textarea {
+    background: rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    border: none;
+    outline-color: white;
+}
+
+.form-group p {
+    background: rgba(242, 242, 242, 0.4);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #000;
+    opacity: 1;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+textarea::placeholder {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+}
+
+.footer h2 {
+    color: #666;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.footer p {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+
+
+/* MINI-LIBRARY */
 
 .red {
     color: #852406;
@@ -146,4 +275,51 @@ p {
 .invert {
     background: #fff;
     color: #666;
+}
+
+.align-start {
+    align-self: start;
+}
+
+.align-end {
+    align-self: flex-end;
+    margin-right: 15%;
+}
+
+hr {
+    margin: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1290px) {
+    .aboutus {
+        width: 1000px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .aboutus {
+        width: 900px;
+    }
+
+    .form-group {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 920px) {
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .aboutus {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 790px) {
+    .navbar {
+        display: none;
+    }
 }

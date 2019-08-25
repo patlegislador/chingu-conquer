@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    min-width: 350px;
 }
 
 body {
@@ -305,7 +306,7 @@ hr {
 .collapse-nav {
     position: fixed;
     margin-top: 50px;
-    margin-left: 80px;
+    margin-left: 8%;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
     width: 85%;
@@ -384,5 +385,25 @@ hr {
 @media all and (max-width: 790px) {
     .navbar {
         display: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #home h1 {
+        font-size: 60px;
+    }
+
+    #home {
+        background-size: 200%;
+        background-position-x: 80%;
+    }
+
+    .services-header {
+        padding: 75px;
+        background-position: 50%;    
+    }
+
+    .services-header > * {
+        width: 100%;
     }
 }

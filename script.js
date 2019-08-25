@@ -43,14 +43,3 @@ sections.forEach(function(el) {
     console.log(menu);
   });
 });
-
-function setActiveAuto(el) {
-  var anchors = Array.from(document.querySelectorAll('a'));
-  anchors.forEach(function(el) {
-    el.classList.remove('active');
-  })
-
-  var menu = document.querySelector("a[href='#" + el.id + "']");
-  menu.classList.add('active');
-  console.log(menu);
-}

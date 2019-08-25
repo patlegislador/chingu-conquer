@@ -157,6 +157,7 @@ p {
 
 .bigger {
     flex: 1 1 100%;
+    max-width: 100%;
 }
 
 
@@ -284,6 +285,10 @@ hr {
     color: #666;
 }
 
+.active {
+    background:#4A505F;
+}
+
 .align-start {
     align-self: start;
 }
@@ -352,6 +357,10 @@ hr {
 
     .btn-toggle-nav {
         visibility: visible;
+    }
+
+    .bigger {
+        max-width: 550px;
     }
 
     .navbar {

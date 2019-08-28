@@ -40,6 +40,5 @@ sections.forEach(function(el) {
   
     var menu = document.querySelector("a[href='#" + this.id + "']");
     menu.classList.add('active');
-    console.log(menu);
   });
 });

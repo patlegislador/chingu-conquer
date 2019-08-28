@@ -1,32 +1,33 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/patlegislador/chingu-conquer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Conquer
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The conquer original theme is a free Bootstrap template available to everyone.
 
-### Markdown
+### Chingu-Conquer
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This basic startup landing page is a cloned version of the original Bootstrap theme Conquer. The page has a couple sections including header, about us, services, contact and footer. It is a responsive page created with flexbox and grid layout that has basic JavaScript functionalities for navigation. 
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Overview
 
-- Bulleted
-- List
+The project is created as a means to enter the Chingu Cohort. It is a requirement to join the 11th voyage. This challenge requires no framework and vanilla JavaScript only.
 
-1. Numbered
-2. List
+### Features
 
-**Bold** and _Italic_ and `Code` text
+The website includes smooth transitions for navigation, highlight menu on scroll, parallax effect for the background as well as a responsive layout that is suitable to all devices.
 
-[Link](url) and ![Image](src)
-```
+### Running the Project
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The project is accessible to everyone, just request a pull or fork the repository.
+
+### Dependencies
+
+The project includes an npm pack for BrowserSync. It is included in the package.json file.
+
+
+2019 © Patrick M. Legislador
 
 ### Jekyll Themes
 
